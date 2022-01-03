@@ -11,6 +11,16 @@
         rel="stylesheet"
     />
 
+    <style>
+      body {
+        background-color: #feed01;
+      }
+
+      #submit {
+        margin-bottom: 50px;
+      }
+    </style>
+
     <body>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <!---- id="tittle" will help style the h1 when the need comes---->
@@ -77,39 +87,47 @@
                         <option value="Other">Other</option>
                     </select>
                 </div>
-                <p>Would you recommend freeCodeCamp to a friend?</p>
-                <input type="radio" name="exe" value="1" />Definitely
-                <br />
-                <input type="radio" name="exe" value="2" />Maybe
-                <br />
-                <input type="radio" name="exe" value="3" />Not sure
+                <div class="form-group">
+                    <p>Would you recommend freeCodeCamp to a friend?</p>
+                    <input type="radio" name="exe" value="1" />Definitely
+                    <br />
+                    <input type="radio" name="exe" value="2" />Maybe
+                    <br />
+                    <input type="radio" name="exe" value="3" />Not sure
+                    <br />
+                </div>
+
+                <div class="form-group">
+                    <p>What is your favorite feature of freeCodeCamp?</p>
+                    <input type="checkbox" value="1" />Front-end Projects <br />
+                    <input type="checkbox" value="2" />Back-end Projects <br />
+                    <input type="checkbox" value="3" />Data Visualization <br />
+                    <input type="checkbox" value="4" />Challenges <br />
+                    <input type="checkbox" value="5" />Open Source Community
+                    <br />
+                    <input type="checkbox" value="6" />Gitter help rooms <br />
+                    <input type="checkbox" value="7" />Videos <br />
+                    <input type="checkbox" value="8" />City Meetups <br />
+                    <input type="checkbox" value="9" />Wiki <br />
+                    <input type="checkbox" value="10" />Forum <br />
+                    <input type="checkbox" value="11" />Additional Courses
+                    <br />
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea
+                        name=""
+                        id="comment"
+                        cols="30"
+                        class="form-control"
+                        rows="10"
+                        placeholder="Enter your comment here..."
+                        spellcheck="false"
+                    ></textarea>
+                </div>
                 <br />
 
-                <p>What is your favorite feature of freeCodeCamp?</p>
-                <input type="checkbox" value="1" />Front-end Projects <br />
-                <input type="checkbox" value="2" />Back-end Projects <br />
-                <input type="checkbox" value="3" />Data Visualization <br />
-                <input type="checkbox" value="4" />Challenges <br />
-                <input type="checkbox" value="5" />Open Source Community <br />
-                <input type="checkbox" value="6" />Gitter help rooms <br />
-                <input type="checkbox" value="7" />Videos <br />
-                <input type="checkbox" value="8" />City Meetups <br />
-                <input type="checkbox" value="9" />Wiki <br />
-                <input type="checkbox" value="10" />Forum <br />
-                <input type="checkbox" value="11" />Additional Courses <br />
-
-                <p>Any comments or suggestions?</p>
-                <textarea
-                    name=""
-                    id="comment"
-                    cols="30"
-                    rows="10"
-                    placeholder="Enter your comment here..."
-                    spellcheck="false"
-                ></textarea>
-                <br /><br />
-
-                <button id="submit">Submit</button>
+                <button id="submit" class="btn btn-primary btn-lg">Submit</button>
             </form>
         </div>
 
