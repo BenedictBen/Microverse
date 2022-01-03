@@ -7,21 +7,77 @@
   </head>
 
   <body>
-    “Hello World, we are software developers!”
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!---- id="tittle" will help style the h1 when the need comes---->
+<h1 id="title">freeCodeCamp Survey Form</h1>
+<!---- id="description" will help style this <paragraph> when the need comes---->
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+<!----If you want to formulate a form---->
+<div class="main">
+<form id="survey-form">
+  <!----"required" means you can't refuse to answer the question asked---->
+  <label id="name-label"><p>Name</p></label>
+  <input id="name" type="text" placeholder="Enter your name" required>
+  <!----we use type="email" and name="email" to prevent the user from typing incorrect email address---->
+  <label id="email-label"><p>Email</p></label>
+   <input id="email" type="email" name="email" placeholder="Enter your email" required>
+  <!----we use type="number" and name="number" to prevent the user from typing only numbers and not alphabet, min="" and max="" is used to indicate the lowest number and highest number the user can go by---->
+  <label id="number-label"><p>Age(optional)</p></label>
+   <input id="number" type="number" name="number" placeholder="Age" min="12" max="60" required>
+  
+<!----we use the select option to choose from multiple categories of list from a dropdown lsit---->
+  <p>Which option best describes your current role?</p>
+<select name="" id="dropdown">
+   <!----always remember to add the 'value' attributes to your ---->
+  <option value="default">Select current role</option>
+  <option value="Student">Student</option>
+  <option value="Full time job">Full time job</option>
+  <option value="Full time learner">Full time learner</option>
+  <option value="Prefer not to say">Prefer not to say</option>
+  <option value="Other">Other</option>
+  
+  
+  </select>
+  <p>Would you recommend freeCodeCamp to a friend?</p>
+ <input type="radio" name="exe" value="1">Definitely
+  <br>
+ <input type="radio" name="exe" value="2">Maybe
+  <br>
+ <input type="radio" name="exe" value="3">Not sure
+  <br>
+  
+  <p>What is your favorite feature of freeCodeCamp?</p>
+  <input type="checkbox" value="1">Front-end Projects <br>
+  <input type="checkbox" value="2">Back-end Projects <br>
+  <input type="checkbox" value="3">Data Visualization <br>
+  <input type="checkbox" value="4">Challenges <br>
+  <input type="checkbox" value="5">Open Source Community <br>
+  <input type="checkbox" value="6">Gitter help rooms <br>
+  <input type="checkbox" value="7">Videos <br>
+  <input type="checkbox" value="8">City Meetups <br>
+  <input type="checkbox" value="9">Wiki <br>
+  <input type="checkbox" value="10">Forum <br>
+  <input type="checkbox" value="11">Additional Courses <br>
+  
+  <p>Any comments or suggestions?</p>
+  <textarea name="" id="comment" cols="30" rows="10" placeholder="Enter your comment here..." spellcheck="false"></textarea>
+  <br><br>
+  
+  <button id="submit">Submit</button>
+</form>
+
+</div>
+
+
+
+
+
+
+
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+  
     <script  src="js/index.js"></script>
   </body>
 </html>
